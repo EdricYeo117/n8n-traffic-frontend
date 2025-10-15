@@ -14,6 +14,7 @@ import {
 } from "react-leaflet";
 import { useEffect } from "react";
 import { useMap } from "react-leaflet";
+import LegendControl from "./LegendControl";
 
 export function MapResizer() {
   const map = useMap();
@@ -53,6 +54,10 @@ const bandColor = {
   6: "#1a9850", // 50–59
 };
 
+const bandRange = {
+  1: "0–9", 2: "10–19", 3: "20–29", 4: "30–39", 5: "40–49", 6: "50–59",
+};
+
 // ------ helpers ------
 const extractRows = (speedData) =>
   Array.isArray(speedData?.rows)
@@ -74,20 +79,41 @@ const sevToColor = (s) =>
 
 // ------ sublayers ------
 function SpeedLinks({ rows }) {
-  return rows.map((r, i) => (
-    <Polyline
-      key={`${r.LINK_ID ?? i}-${r.ROAD_NAME ?? ""}-${i}`}
-      positions={[
-        [r.START_LAT, r.START_LON],
-        [r.END_LAT, r.END_LON],
-      ]}
-      pathOptions={{
-        color: bandColor[r.SPEED_BAND] || "#888",
-        weight: 4,
-        opacity: 0.9,
-      }}
-    />
-  ));
+  return rows
+    .filter(r => r.START_LAT && r.START_LON && r.END_LAT && r.END_LON)
+    .map((r, i) => (
+      <Polyline
+        key={`${r.LINK_ID ?? i}-${r.ROAD_NAME ?? ""}-${i}`}
+        positions={[
+          [r.START_LAT, r.START_LON],
+          [r.END_LAT, r.END_LON],
+        ]}
+        pathOptions={{
+          color: bandColor[r.SPEED_BAND] || "#888",
+          weight: 4,
+          opacity: 0.9,
+        }}
+        eventHandlers={{
+          mouseover: (e) => e.target.setStyle({ weight: 7, opacity: 1 }),
+          mouseout:  (e) => e.target.setStyle({ weight: 4, opacity: 0.9 }),
+        }}
+      >
+        <Tooltip sticky>
+          <div style={{ fontWeight: 700 }}>
+            {r.ROAD_NAME || "Unnamed road"}
+          </div>
+          <div style={{ fontSize: 12 }}>
+            Band {r.SPEED_BAND}: {bandRange[r.SPEED_BAND]} km/h
+          </div>
+          {(r.MINIMUM_SPEED != null && r.MAXIMUM_SPEED != null) && (
+            <div style={{ fontSize: 12 }}>
+              Min–Max: {r.MINIMUM_SPEED}–{r.MAXIMUM_SPEED} km/h
+            </div>
+          )}
+          {r.LINK_ID && <div style={{ fontSize: 12, opacity: 0.7 }}>Link #{r.LINK_ID}</div>}
+        </Tooltip>
+      </Polyline>
+    ));
 }
 
 function IncidentCircles({ items = [] }) {
@@ -128,7 +154,7 @@ export default function SingaporeTrafficMap({ speedData, incidents = [], center=
     <MapContainer
       center={center}
       zoom={zoom}
-      style={{ height: "100vh", width: "100%" }}
+      style={{ height: "100%", width: "100%" }}
       renderer={L.svg()}    
       preferCanvas
     >
@@ -157,7 +183,7 @@ export default function SingaporeTrafficMap({ speedData, incidents = [], center=
           </Pane>
         </LayersControl.Overlay>
       </LayersControl>
-
+     <LegendControl />          {/* ⬅ legend */}
       {/* 👇 make size correct + auto-fit to your data */}
       <MapResizer />
       <MapAutoFit rows={rows} incidents={incidents} />
