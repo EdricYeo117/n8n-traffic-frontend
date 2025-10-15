@@ -37,7 +37,10 @@
 .legend-row .swatch{width:18px;height:6px;border-radius:2px;margin-right:6px}
 .legend-row .dot{width:10px;height:10px;border-radius:50%;
   background:#f03b20;opacity:.35;outline:1px solid #f03b20;margin-right:6px}
-
+/* Strong but tasteful glow around incident circles */
+.leaflet-incident {
+  filter: drop-shadow(0 0 6px rgba(220, 38, 38, 0.55));
+}
 
 @keyframes App-logo-spin {
   from {
