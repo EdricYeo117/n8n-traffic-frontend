@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body, #root { height: 100%; margin: 0; }
+.map-wrap { height: 100vh; width: 100%; }        /* or a fixed px height */
+.leaflet-container { height: 100%; width: 100%; }

@@ -1,0 +1,3981 @@
+[
+  {
+    "metaData": [
+      {
+        "name": "ROAD_KEY",
+        "dbType": {
+          "num": 2001,
+          "name": "DB_TYPE_VARCHAR",
+          "columnTypeName": "VARCHAR2",
+          "_bufferSizeFactor": 4,
+          "_oraTypeNum": 1,
+          "_csfrm": 1
+        },
+        "nullable": true,
+        "isJson": false,
+        "isOson": false,
+        "byteSize": 32767,
+        "dbTypeName": "VARCHAR2",
+        "fetchType": {
+          "num": 2001,
+          "name": "DB_TYPE_VARCHAR",
+          "columnTypeName": "VARCHAR2",
+          "_bufferSizeFactor": 4,
+          "_oraTypeNum": 1,
+          "_csfrm": 1
+        }
+      },
+      {
+        "name": "KIND",
+        "dbType": {
+          "num": 2001,
+          "name": "DB_TYPE_VARCHAR",
+          "columnTypeName": "VARCHAR2",
+          "_bufferSizeFactor": 4,
+          "_oraTypeNum": 1,
+          "_csfrm": 1
+        },
+        "nullable": true,
+        "isJson": false,
+        "isOson": false,
+        "byteSize": 8,
+        "dbTypeName": "VARCHAR2",
+        "fetchType": {
+          "num": 2001,
+          "name": "DB_TYPE_VARCHAR",
+          "columnTypeName": "VARCHAR2",
+          "_bufferSizeFactor": 4,
+          "_oraTypeNum": 1,
+          "_csfrm": 1
+        }
+      },
+      {
+        "name": "LAT",
+        "dbType": {
+          "num": 2010,
+          "name": "DB_TYPE_NUMBER",
+          "columnTypeName": "NUMBER",
+          "_bufferSizeFactor": 22,
+          "_oraTypeNum": 2,
+          "_csfrm": 0
+        },
+        "nullable": true,
+        "isJson": false,
+        "isOson": false,
+        "precision": 0,
+        "scale": -127,
+        "dbTypeName": "NUMBER",
+        "fetchType": {
+          "num": 2010,
+          "name": "DB_TYPE_NUMBER",
+          "columnTypeName": "NUMBER",
+          "_bufferSizeFactor": 22,
+          "_oraTypeNum": 2,
+          "_csfrm": 0
+        }
+      },
+      {
+        "name": "LON",
+        "dbType": {
+          "num": 2010,
+          "name": "DB_TYPE_NUMBER",
+          "columnTypeName": "NUMBER",
+          "_bufferSizeFactor": 22,
+          "_oraTypeNum": 2,
+          "_csfrm": 0
+        },
+        "nullable": true,
+        "isJson": false,
+        "isOson": false,
+        "precision": 0,
+        "scale": -127,
+        "dbTypeName": "NUMBER",
+        "fetchType": {
+          "num": 2010,
+          "name": "DB_TYPE_NUMBER",
+          "columnTypeName": "NUMBER",
+          "_bufferSizeFactor": 22,
+          "_oraTypeNum": 2,
+          "_csfrm": 0
+        }
+      },
+      {
+        "name": "SPEED_LEVEL",
+        "dbType": {
+          "num": 2010,
+          "name": "DB_TYPE_NUMBER",
+          "columnTypeName": "NUMBER",
+          "_bufferSizeFactor": 22,
+          "_oraTypeNum": 2,
+          "_csfrm": 0
+        },
+        "nullable": true,
+        "isJson": false,
+        "isOson": false,
+        "precision": 0,
+        "scale": -127,
+        "dbTypeName": "NUMBER",
+        "fetchType": {
+          "num": 2010,
+          "name": "DB_TYPE_NUMBER",
+          "columnTypeName": "NUMBER",
+          "_bufferSizeFactor": 22,
+          "_oraTypeNum": 2,
+          "_csfrm": 0
+        }
+      }
+    ],
+    "rows": [
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.392983,
+        "LON": 103.823799,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.357877,
+        "LON": 103.857117,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.346309,
+        "LON": 103.859147,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.339523,
+        "LON": 103.861595,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.334089,
+        "LON": 103.862127,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.313647,
+        "LON": 103.761032,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.343284,
+        "LON": 103.641834,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.390786,
+        "LON": 103.774458,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.375647,
+        "LON": 103.728651,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.38701,
+        "LON": 103.858392,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.438998,
+        "LON": 103.768292,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.355036,
+        "LON": 103.724446,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.33599,
+        "LON": 103.760289,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.30257,
+        "LON": 103.841743,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.356643,
+        "LON": 103.715444,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.371061,
+        "LON": 103.94052,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.368779,
+        "LON": 103.778925,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.323176,
+        "LON": 103.663785,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.332507,
+        "LON": 103.977235,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.419328,
+        "LON": 103.800421,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.312579,
+        "LON": 103.761923,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.325736,
+        "LON": 103.972285,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.358607,
+        "LON": 103.961841,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.314865,
+        "LON": 103.957814,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.355794,
+        "LON": 103.720585,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.33262,
+        "LON": 103.977084,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.287521,
+        "LON": 103.861515,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.353376,
+        "LON": 103.728921,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.397057,
+        "LON": 103.773997,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.328739,
+        "LON": 103.974678,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.395224,
+        "LON": 103.916882,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.312815,
+        "LON": 103.844831,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.366265,
+        "LON": 103.949872,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.419675,
+        "LON": 103.769821,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.330562,
+        "LON": 103.860929,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.338859,
+        "LON": 103.753485,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.298301,
+        "LON": 103.781382,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.426271,
+        "LON": 103.786826,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.357737,
+        "LON": 103.962345,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.326012,
+        "LON": 103.833123,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.418776,
+        "LON": 103.801118,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.438382,
+        "LON": 103.768339,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.339107,
+        "LON": 103.646644,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.365775,
+        "LON": 103.952724,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.367695,
+        "LON": 103.713239,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.355947,
+        "LON": 103.717706,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.323162,
+        "LON": 103.873193,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.390848,
+        "LON": 103.773388,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.329772,
+        "LON": 103.862277,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "OTHER",
+        "KIND": "INCIDENT",
+        "LAT": 1.398035,
+        "LON": 103.773798,
+        "SPEED_LEVEL": null
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2915985,
+        "LON": 103.84,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2917045,
+        "LON": 103.840146,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "ARNASALAM CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291719,
+        "LON": 103.8387425,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "NARAYANAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292247,
+        "LON": 103.838471,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "NARAYANAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2921285,
+        "LON": 103.8383885,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2959055,
+        "LON": 103.8398755,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2960985,
+        "LON": 103.8340695,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2960555,
+        "LON": 103.834348,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296012,
+        "LON": 103.8346355,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296004,
+        "LON": 103.8346935,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2959875,
+        "LON": 103.834806,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296036,
+        "LON": 103.834927,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2959945,
+        "LON": 103.835214,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958305,
+        "LON": 103.835888,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2911435,
+        "LON": 103.8391755,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2920205,
+        "LON": 103.840681,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294662,
+        "LON": 103.841794,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "EBER ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2992615,
+        "LON": 103.8399085,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294649,
+        "LON": 103.8418695,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294959,
+        "LON": 103.841651,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2972825,
+        "LON": 103.838039,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2983755,
+        "LON": 103.8397155,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29593,
+        "LON": 103.8352045,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2963215,
+        "LON": 103.83732,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298724,
+        "LON": 103.8391555,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291623,
+        "LON": 103.838456,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "NARAYANAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29179,
+        "LON": 103.838182,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2914585,
+        "LON": 103.8384965,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2954425,
+        "LON": 103.84007,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295869,
+        "LON": 103.8403415,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2939565,
+        "LON": 103.8389635,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294007,
+        "LON": 103.8389105,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2957145,
+        "LON": 103.8385495,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295672,
+        "LON": 103.838344,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2953585,
+        "LON": 103.8376345,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293596,
+        "LON": 103.8393295,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2935975,
+        "LON": 103.839349,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.295417,
+        "LON": 103.835445,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.295655,
+        "LON": 103.8354545,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296876,
+        "LON": 103.837749,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297085,
+        "LON": 103.840434,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298032,
+        "LON": 103.838634,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298484,
+        "LON": 103.839021,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2944015,
+        "LON": 103.837276,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.294446,
+        "LON": 103.8372585,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2943785,
+        "LON": 103.8372325,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.294423,
+        "LON": 103.837215,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2945245,
+        "LON": 103.837253,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MARTIN PLACE",
+        "KIND": "SPEED",
+        "LAT": 1.2936945,
+        "LON": 103.8387155,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2945795,
+        "LON": 103.83731,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MUTHURAMAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2922885,
+        "LON": 103.83775,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2920635,
+        "LON": 103.8375735,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2921215,
+        "LON": 103.8376125,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "NANSON ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291181,
+        "LON": 103.8393745,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295368,
+        "LON": 103.8389035,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294111,
+        "LON": 103.8388555,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2940325,
+        "LON": 103.8389295,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2934925,
+        "LON": 103.8394055,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2938205,
+        "LON": 103.839142,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293577,
+        "LON": 103.8393475,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292623,
+        "LON": 103.8407835,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY WALK",
+        "KIND": "SPEED",
+        "LAT": 1.297678,
+        "LON": 103.8426385,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958335,
+        "LON": 103.8373295,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2957515,
+        "LON": 103.8387475,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2922885,
+        "LON": 103.840915,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291244,
+        "LON": 103.8387045,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292565,
+        "LON": 103.84103,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292631,
+        "LON": 103.841076,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292708,
+        "LON": 103.841208,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2981765,
+        "LON": 103.8410755,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "EBER ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2991885,
+        "LON": 103.840975,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "SEA AVENUE",
+        "KIND": "SPEED",
+        "LAT": 1.305789,
+        "LON": 103.9068875,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.2954055,
+        "LON": 103.8354265,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2955605,
+        "LON": 103.8371865,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296553,
+        "LON": 103.8375135,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296336,
+        "LON": 103.837369,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296297,
+        "LON": 103.837349,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292482,
+        "LON": 103.841015,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2921055,
+        "LON": 103.8375745,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292087,
+        "LON": 103.837662,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292024,
+        "LON": 103.837768,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "NARAYANAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291947,
+        "LON": 103.838237,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "ARNASALAM CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29165,
+        "LON": 103.8386115,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "ARNASALAM CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291719,
+        "LON": 103.8387425,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291769,
+        "LON": 103.8381525,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "ARNASALAM CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2916,
+        "LON": 103.838432,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2914715,
+        "LON": 103.8385695,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294675,
+        "LON": 103.838687,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294675,
+        "LON": 103.838687,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293885,
+        "LON": 103.8390605,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2939325,
+        "LON": 103.839012,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295272,
+        "LON": 103.8387665,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2924805,
+        "LON": 103.840406,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292466,
+        "LON": 103.8404205,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292482,
+        "LON": 103.840422,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2935005,
+        "LON": 103.8394195,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29357,
+        "LON": 103.8393745,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2955905,
+        "LON": 103.8380715,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292645,
+        "LON": 103.8407965,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292548,
+        "LON": 103.8409065,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292607,
+        "LON": 103.8408325,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2927055,
+        "LON": 103.840677,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2916145,
+        "LON": 103.838371,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2971035,
+        "LON": 103.837929,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2963,
+        "LON": 103.8373105,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2981715,
+        "LON": 103.838721,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2982955,
+        "LON": 103.838845,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298156,
+        "LON": 103.838758,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2986965,
+        "LON": 103.8391625,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "SEA AVENUE",
+        "KIND": "SPEED",
+        "LAT": 1.305674,
+        "LON": 103.906986,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MARSHALL LANE",
+        "KIND": "SPEED",
+        "LAT": 1.307279,
+        "LON": 103.901177,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2982205,
+        "LON": 103.83999,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "ARNASALAM CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291736,
+        "LON": 103.83872,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294833,
+        "LON": 103.8417385,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292028,
+        "LON": 103.837629,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292056,
+        "LON": 103.83771,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291997,
+        "LON": 103.83768,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "ROBERTSON QUAY",
+        "KIND": "SPEED",
+        "LAT": 1.2920175,
+        "LON": 103.8377105,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2920355,
+        "LON": 103.8376795,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "SAIBOO STREET",
+        "KIND": "SPEED",
+        "LAT": 1.290983,
+        "LON": 103.83875,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291775,
+        "LON": 103.8403,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2919825,
+        "LON": 103.8405845,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "UNITY STREET",
+        "KIND": "SPEED",
+        "LAT": 1.29259,
+        "LON": 103.8410885,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292814,
+        "LON": 103.841238,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294091,
+        "LON": 103.838836,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2941645,
+        "LON": 103.8387895,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294417,
+        "LON": 103.838726,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294755,
+        "LON": 103.8386815,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293529,
+        "LON": 103.839392,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MARTIN PLACE",
+        "KIND": "SPEED",
+        "LAT": 1.2938745,
+        "LON": 103.8387885,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "WILKINSON ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.303053,
+        "LON": 103.8956585,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2952075,
+        "LON": 103.8397675,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2953665,
+        "LON": 103.8400835,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.295192,
+        "LON": 103.8397925,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.295693,
+        "LON": 103.840099,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.295669,
+        "LON": 103.8400975,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2956825,
+        "LON": 103.840082,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2956795,
+        "LON": 103.8401145,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.295774,
+        "LON": 103.840085,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958695,
+        "LON": 103.8398225,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295855,
+        "LON": 103.840106,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29585,
+        "LON": 103.8400105,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.295886,
+        "LON": 103.840087,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2948615,
+        "LON": 103.838719,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293885,
+        "LON": 103.8390605,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2927485,
+        "LON": 103.840631,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292694,
+        "LON": 103.8407185,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292607,
+        "LON": 103.8408325,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292661,
+        "LON": 103.8407475,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292661,
+        "LON": 103.8407475,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2926725,
+        "LON": 103.840706,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2927285,
+        "LON": 103.840619,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2929695,
+        "LON": 103.84026,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29299,
+        "LON": 103.8402185,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295867,
+        "LON": 103.8356425,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2971565,
+        "LON": 103.8397805,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY GARDEN",
+        "KIND": "SPEED",
+        "LAT": 1.298153,
+        "LON": 103.8420395,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY WALK",
+        "KIND": "SPEED",
+        "LAT": 1.297659,
+        "LON": 103.8426505,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297128,
+        "LON": 103.839773,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "NARAYANAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2919315,
+        "LON": 103.838264,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297849,
+        "LON": 103.8384935,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2912195,
+        "LON": 103.8393825,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2913615,
+        "LON": 103.8396335,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2921325,
+        "LON": 103.840766,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29449,
+        "LON": 103.8418795,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2960015,
+        "LON": 103.8349335,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2960055,
+        "LON": 103.83491,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2972155,
+        "LON": 103.8408235,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2969795,
+        "LON": 103.8407575,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2935505,
+        "LON": 103.8369255,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.293402,
+        "LON": 103.836982,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2934015,
+        "LON": 103.8369165,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY GREEN",
+        "KIND": "SPEED",
+        "LAT": 1.2932845,
+        "LON": 103.836944,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294002,
+        "LON": 103.838938,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MUTHURAMAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292371,
+        "LON": 103.8378065,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "NARAYANAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2918055,
+        "LON": 103.8381535,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2918575,
+        "LON": 103.837961,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "OXLEY GARDEN",
+        "KIND": "SPEED",
+        "LAT": 1.297819,
+        "LON": 103.8426785,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291697,
+        "LON": 103.838259,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2910375,
+        "LON": 103.838871,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "NANSON ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2911945,
+        "LON": 103.839412,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292065,
+        "LON": 103.8406405,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "WILKINSON ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.3030525,
+        "LON": 103.8958085,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "BROADRICK ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.300753,
+        "LON": 103.8907565,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292326,
+        "LON": 103.840866,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MARTIN PLACE",
+        "KIND": "SPEED",
+        "LAT": 1.2940375,
+        "LON": 103.838902,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MUTHURAMAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292394,
+        "LON": 103.837774,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "BARTLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.3418745,
+        "LON": 103.881643,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958475,
+        "LON": 103.8407785,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2972055,
+        "LON": 103.83801,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2959245,
+        "LON": 103.840746,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297148,
+        "LON": 103.8406785,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958795,
+        "LON": 103.8395405,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2959135,
+        "LON": 103.840009,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2959305,
+        "LON": 103.8403115,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2983625,
+        "LON": 103.839737,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2910795,
+        "LON": 103.8391875,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292098,
+        "LON": 103.8407725,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294372,
+        "LON": 103.84204,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295545,
+        "LON": 103.841299,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295526,
+        "LON": 103.841399,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2959525,
+        "LON": 103.835505,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2952615,
+        "LON": 103.841559,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2925115,
+        "LON": 103.840994,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296606,
+        "LON": 103.8406895,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2963515,
+        "LON": 103.840611,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296371,
+        "LON": 103.8406315,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2961475,
+        "LON": 103.8405805,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2963985,
+        "LON": 103.840624,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296149,
+        "LON": 103.840548,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2984385,
+        "LON": 103.8411455,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.29423,
+        "LON": 103.8371745,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.29423,
+        "LON": 103.8371745,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.294293,
+        "LON": 103.837234,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2943155,
+        "LON": 103.837173,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.293598,
+        "LON": 103.836996,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2936315,
+        "LON": 103.836969,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2936095,
+        "LON": 103.8369335,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2938985,
+        "LON": 103.8390245,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2951675,
+        "LON": 103.838754,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295398,
+        "LON": 103.83877,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2955605,
+        "LON": 103.8387575,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2957145,
+        "LON": 103.8385495,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295729,
+        "LON": 103.8384475,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292651,
+        "LON": 103.840256,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2937185,
+        "LON": 103.8392365,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2936495,
+        "LON": 103.8393005,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2976165,
+        "LON": 103.8388735,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2976475,
+        "LON": 103.838891,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2978795,
+        "LON": 103.838518,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295815,
+        "LON": 103.839547,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2918265,
+        "LON": 103.838183,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2917305,
+        "LON": 103.838318,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2921375,
+        "LON": 103.8407305,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MUTHURAMAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2920795,
+        "LON": 103.8376115,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2957285,
+        "LON": 103.8387955,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2957905,
+        "LON": 103.8387745,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2914905,
+        "LON": 103.8399715,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291649,
+        "LON": 103.8401865,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2919045,
+        "LON": 103.8404225,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2960385,
+        "LON": 103.8346845,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.2956505,
+        "LON": 103.835488,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.2954015,
+        "LON": 103.8354605,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296157,
+        "LON": 103.8372395,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2963245,
+        "LON": 103.8372815,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2970255,
+        "LON": 103.8378385,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2970255,
+        "LON": 103.8378385,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2971305,
+        "LON": 103.837891,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297228,
+        "LON": 103.837997,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297231,
+        "LON": 103.8379685,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.293519,
+        "LON": 103.8369545,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2972685,
+        "LON": 103.8379975,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2973125,
+        "LON": 103.8380325,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297605,
+        "LON": 103.838327,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297282,
+        "LON": 103.838069,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297242,
+        "LON": 103.8380385,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29807,
+        "LON": 103.8402135,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298547,
+        "LON": 103.8394645,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298382,
+        "LON": 103.839734,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2983045,
+        "LON": 103.8398715,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2989885,
+        "LON": 103.8393535,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298764,
+        "LON": 103.841249,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298658,
+        "LON": 103.841221,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2987065,
+        "LON": 103.841252,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298921,
+        "LON": 103.841273,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298641,
+        "LON": 103.841235,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29843,
+        "LON": 103.841176,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298235,
+        "LON": 103.8411065,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298235,
+        "LON": 103.8411065,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2971165,
+        "LON": 103.840674,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2971285,
+        "LON": 103.8408145,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29715,
+        "LON": 103.840806,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "OXLEY WALK",
+        "KIND": "SPEED",
+        "LAT": 1.297303,
+        "LON": 103.842432,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY GARDEN",
+        "KIND": "SPEED",
+        "LAT": 1.297728,
+        "LON": 103.842429,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "JALAN SEDAP",
+        "KIND": "SPEED",
+        "LAT": 1.300295,
+        "LON": 103.896426,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "JALAN SEDAP",
+        "KIND": "SPEED",
+        "LAT": 1.2997795,
+        "LON": 103.8948165,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MUTHURAMAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2922875,
+        "LON": 103.837725,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MARTIN PLACE",
+        "KIND": "SPEED",
+        "LAT": 1.293711,
+        "LON": 103.8386735,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MARTIN PLACE",
+        "KIND": "SPEED",
+        "LAT": 1.293717,
+        "LON": 103.838704,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MARTIN PLACE",
+        "KIND": "SPEED",
+        "LAT": 1.2931605,
+        "LON": 103.838345,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MUTHURAMAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2924515,
+        "LON": 103.8378375,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2911565,
+        "LON": 103.8386445,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.290996,
+        "LON": 103.83872,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "SAIBOO STREET",
+        "KIND": "SPEED",
+        "LAT": 1.2909485,
+        "LON": 103.838709,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "WILKINSON ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.30266,
+        "LON": 103.891182,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2961895,
+        "LON": 103.8410445,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2964745,
+        "LON": 103.8411475,
+        "SPEED_LEVEL": 6
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2965325,
+        "LON": 103.841198,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295825,
+        "LON": 103.839265,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295825,
+        "LON": 103.839265,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29589,
+        "LON": 103.8379635,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958905,
+        "LON": 103.837989,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2928435,
+        "LON": 103.8400265,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292906,
+        "LON": 103.839985,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292906,
+        "LON": 103.839985,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291963,
+        "LON": 103.8377395,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294982,
+        "LON": 103.8417015,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "EBER ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.299229,
+        "LON": 103.8396865,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "EBER ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2993145,
+        "LON": 103.840552,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "TANJONG KATONG ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.3023745,
+        "LON": 103.89705,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2956795,
+        "LON": 103.838157,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2955325,
+        "LON": 103.837451,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2955335,
+        "LON": 103.837619,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2981825,
+        "LON": 103.8400225,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29821,
+        "LON": 103.840038,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298179,
+        "LON": 103.8400895,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298114,
+        "LON": 103.8402015,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298172,
+        "LON": 103.8400705,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298159,
+        "LON": 103.840093,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298694,
+        "LON": 103.8391935,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2954965,
+        "LON": 103.839826,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2954965,
+        "LON": 103.839826,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2955095,
+        "LON": 103.8399805,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.295519,
+        "LON": 103.84009,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2955385,
+        "LON": 103.840107,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.295443,
+        "LON": 103.8401035,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2953665,
+        "LON": 103.8400835,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.2956295,
+        "LON": 103.840112,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958775,
+        "LON": 103.8399325,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.295887,
+        "LON": 103.8401245,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295626,
+        "LON": 103.836859,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295945,
+        "LON": 103.8405175,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295325,
+        "LON": 103.8387745,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2956455,
+        "LON": 103.8379505,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29229,
+        "LON": 103.840564,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293187,
+        "LON": 103.8396965,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2935755,
+        "LON": 103.839328,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2936285,
+        "LON": 103.839278,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293735,
+        "LON": 103.8392,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293682,
+        "LON": 103.839249,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2923135,
+        "LON": 103.840587,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2930115,
+        "LON": 103.840236,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2927945,
+        "LON": 103.8405185,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297113,
+        "LON": 103.8404315,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2972125,
+        "LON": 103.8396225,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297186,
+        "LON": 103.8396115,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297519,
+        "LON": 103.839036,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2975495,
+        "LON": 103.8390535,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29525,
+        "LON": 103.841496,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295274,
+        "LON": 103.8387395,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295328,
+        "LON": 103.8387465,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2953845,
+        "LON": 103.838754,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295367,
+        "LON": 103.8387665,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2919175,
+        "LON": 103.8379895,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294943,
+        "LON": 103.838702,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296194,
+        "LON": 103.837317,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.2952865,
+        "LON": 103.835414,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.29539,
+        "LON": 103.835442,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2978505,
+        "LON": 103.8385235,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2979655,
+        "LON": 103.838557,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298032,
+        "LON": 103.838634,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MOUNTBATTEN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.300071,
+        "LON": 103.890488,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298168,
+        "LON": 103.8411045,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2966145,
+        "LON": 103.840662,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "OXLEY WALK",
+        "KIND": "SPEED",
+        "LAT": 1.2972905,
+        "LON": 103.842451,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.293576,
+        "LON": 103.8369605,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.295362,
+        "LON": 103.8375135,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2945795,
+        "LON": 103.83731,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2948425,
+        "LON": 103.837363,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2950825,
+        "LON": 103.8374795,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2950825,
+        "LON": 103.8374795,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2951475,
+        "LON": 103.837455,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2948195,
+        "LON": 103.8374265,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2951945,
+        "LON": 103.837496,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2951295,
+        "LON": 103.8375205,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.294501,
+        "LON": 103.8373155,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2937785,
+        "LON": 103.8369785,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2940565,
+        "LON": 103.8371425,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2935445,
+        "LON": 103.8369895,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.293519,
+        "LON": 103.8369545,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY GARDEN",
+        "KIND": "SPEED",
+        "LAT": 1.2974245,
+        "LON": 103.8419875,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "OXLEY GARDEN",
+        "KIND": "SPEED",
+        "LAT": 1.297413,
+        "LON": 103.8419625,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MEYER PLACE",
+        "KIND": "SPEED",
+        "LAT": 1.299327,
+        "LON": 103.886554,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "OXLEY GARDEN",
+        "KIND": "SPEED",
+        "LAT": 1.2976345,
+        "LON": 103.8421895,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "JALAN SEAVIEW",
+        "KIND": "SPEED",
+        "LAT": 1.3007825,
+        "LON": 103.895813,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "OXLEY GARDEN",
+        "KIND": "SPEED",
+        "LAT": 1.2977895,
+        "LON": 103.8422125,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY RISE",
+        "KIND": "SPEED",
+        "LAT": 1.2977465,
+        "LON": 103.842766,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "OXLEY RISE",
+        "KIND": "SPEED",
+        "LAT": 1.2978,
+        "LON": 103.8427375,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2932605,
+        "LON": 103.836979,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2928345,
+        "LON": 103.8371335,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MUTHURAMAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292217,
+        "LON": 103.837652,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MUTHURAMAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2923125,
+        "LON": 103.837718,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MUTHURAMAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2923135,
+        "LON": 103.837743,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "WILKINSON ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.302776,
+        "LON": 103.8925365,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MUTHURAMAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292192,
+        "LON": 103.8376855,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2915615,
+        "LON": 103.840008,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2915785,
+        "LON": 103.8400325,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2948675,
+        "LON": 103.841723,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958575,
+        "LON": 103.8409775,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.295774,
+        "LON": 103.84012,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "NARAYANAN CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292052,
+        "LON": 103.838318,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292743,
+        "LON": 103.8411505,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295971,
+        "LON": 103.8349165,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958885,
+        "LON": 103.8354975,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295821,
+        "LON": 103.8363565,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2915415,
+        "LON": 103.8400405,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295749,
+        "LON": 103.8367955,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958655,
+        "LON": 103.8370605,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295699,
+        "LON": 103.8371,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2957725,
+        "LON": 103.839108,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295806,
+        "LON": 103.83888,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.295598,
+        "LON": 103.837343,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291551,
+        "LON": 103.8399365,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291853,
+        "LON": 103.840462,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292103,
+        "LON": 103.840737,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2924775,
+        "LON": 103.8410515,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292507,
+        "LON": 103.8410305,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292532,
+        "LON": 103.841089,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292596,
+        "LON": 103.841133,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294839,
+        "LON": 103.841707,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2942295,
+        "LON": 103.842149,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.294276,
+        "LON": 103.8421135,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293121,
+        "LON": 103.8414035,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2948615,
+        "LON": 103.8417545,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295896,
+        "LON": 103.8409725,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297333,
+        "LON": 103.8393795,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.2952835,
+        "LON": 103.8354465,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.295107,
+        "LON": 103.8354185,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.295106,
+        "LON": 103.835434,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.295923,
+        "LON": 103.835485,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "JALAN KUALA",
+        "KIND": "SPEED",
+        "LAT": 1.295918,
+        "LON": 103.8355175,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2958345,
+        "LON": 103.8372425,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.295257,
+        "LON": 103.837469,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2954055,
+        "LON": 103.8374375,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY CLOSE",
+        "KIND": "SPEED",
+        "LAT": 1.2952165,
+        "LON": 103.837465,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29737,
+        "LON": 103.838078,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297482,
+        "LON": 103.838165,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2976265,
+        "LON": 103.8382835,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297781,
+        "LON": 103.838411,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297878,
+        "LON": 103.838488,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297946,
+        "LON": 103.838595,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298152,
+        "LON": 103.840074,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "DUBLIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298356,
+        "LON": 103.8397185,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296379,
+        "LON": 103.8406035,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "LLOYD ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297449,
+        "LON": 103.8391865,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "ARNASALAM CHETTY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291686,
+        "LON": 103.838572,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295649,
+        "LON": 103.841305,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "MARTIN PLACE",
+        "KIND": "SPEED",
+        "LAT": 1.2938495,
+        "LON": 103.838826,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295066,
+        "LON": 103.8387165,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295078,
+        "LON": 103.8387305,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2950505,
+        "LON": 103.8387265,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295286,
+        "LON": 103.8387545,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29526,
+        "LON": 103.8387515,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295702,
+        "LON": 103.8386555,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295764,
+        "LON": 103.8386415,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2956575,
+        "LON": 103.838446,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293537,
+        "LON": 103.839406,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2925705,
+        "LON": 103.84092,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293032,
+        "LON": 103.8401945,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296971,
+        "LON": 103.8407845,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291112,
+        "LON": 103.838866,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "MARTIN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2910745,
+        "LON": 103.838748,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.292814,
+        "LON": 103.841238,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295438,
+        "LON": 103.8414255,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295566,
+        "LON": 103.838808,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2957675,
+        "LON": 103.8388225,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295397,
+        "LON": 103.8389035,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2953805,
+        "LON": 103.8387825,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2950625,
+        "LON": 103.8387405,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2944225,
+        "LON": 103.8387505,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293978,
+        "LON": 103.8389865,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.293919,
+        "LON": 103.839048,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2939325,
+        "LON": 103.839012,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2941645,
+        "LON": 103.8387895,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2951705,
+        "LON": 103.838728,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2936985,
+        "LON": 103.8392125,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2937995,
+        "LON": 103.8391185,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2955395,
+        "LON": 103.8377715,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KIM YAM ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2924645,
+        "LON": 103.8404045,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2932965,
+        "LON": 103.8397975,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29292,
+        "LON": 103.840367,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2927055,
+        "LON": 103.840677,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2927715,
+        "LON": 103.840573,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2927715,
+        "LON": 103.840573,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "TONG WATT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2932725,
+        "LON": 103.839803,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.291156,
+        "LON": 103.839404,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "BARTLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.341959,
+        "LON": 103.881708,
+        "SPEED_LEVEL": 6
+      },
+      {
+        "ROAD_KEY": "MOHAMED SULTAN ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.29144,
+        "LON": 103.8399045,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "INSTITUTION HILL",
+        "KIND": "SPEED",
+        "LAT": 1.295519,
+        "LON": 103.84009,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2960855,
+        "LON": 103.8372985,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295647,
+        "LON": 103.837563,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2956405,
+        "LON": 103.837846,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.298962,
+        "LON": 103.839409,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2943335,
+        "LON": 103.841983,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "EBER ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.299229,
+        "LON": 103.839576,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "EBER ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2990685,
+        "LON": 103.841332,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY RISE",
+        "KIND": "SPEED",
+        "LAT": 1.298007,
+        "LON": 103.842629,
+        "SPEED_LEVEL": 5
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2957325,
+        "LON": 103.841104,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "RIVER VALLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.295787,
+        "LON": 103.8411315,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "SAIBOO STREET",
+        "KIND": "SPEED",
+        "LAT": 1.2909615,
+        "LON": 103.838679,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.297312,
+        "LON": 103.8380625,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296364,
+        "LON": 103.8373025,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "ST. THOMAS WALK",
+        "KIND": "SPEED",
+        "LAT": 1.2963785,
+        "LON": 103.8373515,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "KILLINEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296716,
+        "LON": 103.8375695,
+        "SPEED_LEVEL": 4
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2989115,
+        "LON": 103.841308,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "CRESCENT ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.306337,
+        "LON": 103.8908185,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2987155,
+        "LON": 103.841218,
+        "SPEED_LEVEL": 3
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2986335,
+        "LON": 103.841215,
+        "SPEED_LEVEL": 1
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.2986505,
+        "LON": 103.841201,
+        "SPEED_LEVEL": 2
+      },
+      {
+        "ROAD_KEY": "OXLEY ROAD",
+        "KIND": "SPEED",
+        "LAT": 1.296822,
+        "LON": 103.8407275,
+        "SPEED_LEVEL": 1
+      }
+    ]
+  }
+]
