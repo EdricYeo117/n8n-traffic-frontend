@@ -1,6 +1,7 @@
 // SingaporeTrafficMap.jsx
 import React, { useMemo } from "react";
 import "leaflet/dist/leaflet.css";
+import L from "leaflet";
 import {
   MapContainer,
   TileLayer,
@@ -128,6 +129,7 @@ export default function SingaporeTrafficMap({ speedData, incidents = [], center=
       center={center}
       zoom={zoom}
       style={{ height: "100vh", width: "100%" }}
+      renderer={L.svg()}    
       preferCanvas
     >
       <TileLayer
