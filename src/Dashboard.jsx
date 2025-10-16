@@ -45,7 +45,7 @@ function LegendCard() {
       padding: 14
     }}>
       <div style={{ fontWeight: 600, marginBottom: 8 }}>Speed Bands (km/h)</div>
-      <div style={{ display: "grid", gap: 8 }}>
+      <div className="section grid-3" style={{ display: "grid", gap: 8 }}>
         {[1,2,3,4,5,6].map(b => (
           <div key={b} style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{ width: 28, height: 10, borderRadius: 4, background: bandColor[b] }} />
@@ -119,7 +119,7 @@ function SlowestList({ rows }) {
       padding: 14
     }}>
       <div style={{ fontWeight: 600, marginBottom: 8 }}>Slowest Segments</div>
-      <div style={{ display: "grid", gap: 8 }}>
+      <div className="section grid-3" style={{  display: "grid", gap: 8 }}>
         {slowest.map((s, i) => (
           <div key={i} style={{
             background: "#fafafa", border: "1px solid #eee", borderRadius: 8,

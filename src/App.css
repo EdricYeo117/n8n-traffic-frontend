@@ -220,6 +220,28 @@ button:active {
   gap: 10px;
 }
 
+/* Multi-column grid for segments/lists */
+.section.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .section.grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .section.grid-2,
+  .section.grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .summary {
   white-space: pre-wrap;
   font-size: 13px;

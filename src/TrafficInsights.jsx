@@ -115,7 +115,7 @@ function Hotspots({ rows }) {
 
   return (
     <Card title="Top Hotspots">
-      <div className="section">
+      <div className="section grid-3">
         {rows.map((h, i) => {
           const b = Number(h.band) || 1;
           const clr = bandColor[b] || "#aaa";
@@ -146,31 +146,50 @@ function Hotspots({ rows }) {
 }
 
 // Replace your existing Advice component with this one-column version
-function Advice({ items }) {
+function Advice({ items = [] }) {
   const clean = (s) =>
     String(s || "")
       .replace(/\{\s*"(generatedAt|topHotspots|advice)"[\s\S]*$/i, "")
       .trim();
 
   const normalized = Array.isArray(items)
-    ? items.map((x) =>
-        typeof x === "string" ? { road: null, action: clean(x) } : { ...x, action: clean(x.action) }
-      )
+    ? items.map((x) => (typeof x === "string" ? { road: null, action: clean(x) } : { ...x, action: clean(x.action) }))
     : [];
 
-  if (!normalized.length) return <Card title="Actionable Advice">No advice available.</Card>;
+  const chunkBy = (arr, columns) => {
+    const size = Math.ceil(arr.length / columns) || 1;
+    return Array.from({ length: columns }, (_, i) => arr.slice(i * size, (i + 1) * size));
+  };
+
+  const cols = chunkBy(normalized, 3);
 
   return (
-    <Card title="Actionable Advice">
-      <ul className="list-clean">
-        {normalized.map((a, i) => (
-          <li key={i}>
-            {a.road ? <span className="list-road">{a.road}: </span> : null}
-            {a.action || "—"}
-          </li>
-        ))}
-      </ul>
-    </Card>
+    <div className="section grid-3">
+      {cols.map((col, idx) => (
+        <Card key={idx} title={idx === 0 ? "Actionable Advice" : " "} className="card card--padded card--accent">
+          {col.length === 0 ? (
+            <div className="muted">No advice available.</div>
+          ) : (
+            <ul className="list-clean">
+              {col.map((a, i) => (
+                <li key={i} className="hotspot-row">
+                  <div>
+                    {a.road && <div className="hotspot-road">{a.road}</div>}
+                    <div className="summary">{a.action || "—"}</div>
+                  </div>
+                  {a.severity != null && (
+                    <span className="chip">
+                      <span className="dot" style={{ "--c": a.severity >= 7 ? "#ef4444" : a.severity >= 5 ? "#f59e0b" : a.severity >= 3 ? "#3b82f6" : "#9ca3af" }} />
+                      L{Number(a.severity)}
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </Card>
+      ))}
+    </div>
   );
 }
 
@@ -181,7 +200,7 @@ export default function TrafficInsights({ data, loading, error, onRefresh }) {
 
   return (
     <div className="section">
-      <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+      <div className="section grid-3" style={{ display: "flex", gap: 8, alignItems: "center" }}>
         <span className="muted">
           Insights: {loading ? "Loading…" : error ? "Error" : "Loaded"}
         </span>
