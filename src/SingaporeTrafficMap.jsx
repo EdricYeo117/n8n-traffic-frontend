@@ -250,25 +250,22 @@ function IncidentCircles({ items = [], scale = 1 }) {
               }}
               eventHandlers={{ mouseover: onOver, mouseout: onOut }}
             >
-     <Tooltip direction="top" offset={[0, -6]} sticky>
+<Tooltip direction="top" offset={[0, -6]} sticky>
   <div style={{ fontWeight: 700 }}>
-    {(() => {
-      // Priority for title/road display
-      if (d.title && d.title !== "OTHER") return d.title;
-      if (d.label && d.label !== "OTHER") return d.label;
-      if (d._roadName && d._roadName !== "OTHER") return d._roadName;
-      if (d.ROAD_KEY && d.ROAD_KEY !== "OTHER") return d.ROAD_KEY;
-      return "Unnamed Road / Incident";
-    })()}
+    {d.title ? d.title : "Incident"}
   </div>
-
+  {d.message && (
+    <div style={{ fontSize: 12, marginTop: 2 }}>
+      {d.message}
+    </div>
+  )}
   {Number.isFinite(d._kmh) ? (
-    <div style={{ fontSize: 12 }}>
+    <div style={{ fontSize: 12, marginTop: 4 }}>
       Nearest speed: <b>{Math.round(d._kmh)} km/h</b>
       {d._band ? ` (Band ${d._band})` : ""}
     </div>
   ) : (
-    <div style={{ fontSize: 12, opacity: 0.75 }}>
+    <div style={{ fontSize: 12, opacity: 0.75, marginTop: 4 }}>
       No nearby speed sample
     </div>
   )}
