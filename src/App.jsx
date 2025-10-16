@@ -55,8 +55,6 @@ const API_BASE =
 
 const SPEED_URL = `${API_BASE}/webhook/speed-bands`;
 const INCIDENT_URL = `${API_BASE}/webhook/incidents`;
-
-// Your insights webhook (as provided). If your path differs, edit below.
 const INSIGHTS_URL = `${API_BASE}/webhook/AgentResponse`;
 
 function App() {
@@ -87,65 +85,71 @@ function App() {
   const speedData = useMemo(() => coerceSpeedData(speedRaw), [speedRaw]);
   const incidents = useMemo(() => normalizeIncidents(incRaw), [incRaw]);
 
-  const previewRows = useMemo(() => {
-    const root = Array.isArray(speedRaw) ? speedRaw[0] : speedRaw;
-    return Array.isArray(root?.rows) ? root.rows : [];
-  }, [speedRaw]);
+  // Helper to get status class
+  const getStatusClass = (loading, error) => {
+    if (loading) return "loading";
+    if (error) return "error";
+    return "loaded";
+  };
 
   return (
-    <div className="App" style={{ padding: 16 }}>
-      <h2 style={{ margin: "8px 0 16px" }}>Singapore Traffic Monitor</h2>
+    <div className="App">
+      <h2>Singapore Traffic Monitor</h2>
 
-      {/* status + manual refresh */}
-      <div style={{ display: "flex", gap: 12, alignItems: "center", marginBottom: 8 }}>
-        <span style={{ fontSize: 12, color: "#666" }}>
-          Speed: {speedLoading ? "Loading…" : speedErr ? "Error" : "Loaded"}
+      {/* Compact status + manual refresh */}
+      <div className="control-bar">
+        <span className={`status-badge ${getStatusClass(speedLoading, speedErr)}`}>
+          Speed: {speedLoading ? "Loading…" : speedErr ? "Error" : "✓"}
         </span>
-        <button onClick={refreshSpeed}>Refresh speed bands</button>
+        <button onClick={refreshSpeed}>↻ Speed</button>
 
-        <span style={{ fontSize: 12, color: "#666" }}>
-          Incidents: {incLoading ? "Loading…" : incErr ? "Error" : "Loaded"}
+        <span className={`status-badge ${getStatusClass(incLoading, incErr)}`}>
+          Incidents: {incLoading ? "Loading…" : incErr ? "Error" : "✓"}
         </span>
-        <button onClick={refreshInc}>Refresh incidents</button>
+        <button onClick={refreshInc}>↻ Incidents</button>
 
-        <span style={{ fontSize: 12, color: "#666" }}>
-          Insights: {insightsLoading ? "Loading…" : insightsErr ? "Error" : "Loaded"}
+        <span className={`status-badge ${getStatusClass(insightsLoading, insightsErr)}`}>
+          Insights: {insightsLoading ? "Loading…" : insightsErr ? "Error" : "✓"}
         </span>
-        <button onClick={refreshInsights}>Refresh insights</button>
+        <button onClick={refreshInsights}>↻ Insights</button>
       </div>
 
       {(speedErr || incErr || insightsErr) && (
-        <div style={{ marginBottom: 10, color: "#b91c1c", fontSize: 13 }}>
-          {speedErr ? `Speed webhook error: ${speedErr.message}. ` : ""}
-          {incErr ? `Incidents webhook error: ${incErr.message}. ` : ""}
-          {insightsErr ? `Insights webhook error: ${insightsErr.message}.` : ""}
+        <div className="error-message">
+          {speedErr ? `Speed: ${speedErr.message}. ` : ""}
+          {incErr ? `Incidents: ${incErr.message}. ` : ""}
+          {insightsErr ? `Insights: ${insightsErr.message}.` : ""}
         </div>
       )}
 
+      {/* Optimized GRID: Map on top, Dashboard below, Insights at bottom */}
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "2fr 1fr",
-          gap: 16,
-          alignItems: "stretch",
+          gridTemplateAreas: `
+            "main"
+            "sidebar"
+            "insights"
+          `,
+          gridTemplateColumns: "1fr",
+          gap: 12,
+          alignItems: "start",
         }}
       >
-        {/* Map */}
-        <div
-          style={{
-            background: "#fff",
-            border: "1px solid #eee",
-            borderRadius: 12,
-            padding: 8,
-            height: 600,
-          }}
-        >
-          <SingaporeTrafficMap speedData={speedData} incidents={incidents} />
+        {/* TOP: Map - full width */}
+        <div style={{ gridArea: "main" }}>
+          <div className="map-container">
+            <SingaporeTrafficMap speedData={speedData} incidents={incidents} />
+          </div>
         </div>
 
-        {/* Right rail: dashboard + insights */}
-        <div style={{ display: "grid", gap: 12, alignContent: "start" }}>
+        {/* MIDDLE: Dashboard */}
+        <div style={{ gridArea: "sidebar" }}>
           <Dashboard speedData={speedData} incidents={incidents} />
+        </div>
+
+        {/* BOTTOM: Traffic Insights */}
+        <div style={{ gridArea: "insights" }}>
           <TrafficInsights
             data={insightsRaw}
             loading={insightsLoading}
@@ -155,10 +159,25 @@ function App() {
         </div>
       </div>
 
-      {/* JSON inspection panels */}
-      <JSONPanel title="Speed JSON (raw)" data={speedRaw} />
-      <JSONPanel title="Incidents JSON (raw)" data={incRaw} />
-      <JSONPanel title="Insights JSON (raw)" data={insightsRaw} />
+      {/* JSON inspection panels - hidden by default, can be toggled */}
+      <details style={{ marginTop: 16 }}>
+        <summary style={{ 
+          cursor: "pointer", 
+          padding: "8px 12px", 
+          background: "#f9fafb", 
+          border: "1px solid #e5e7eb",
+          borderRadius: 8,
+          fontWeight: 600,
+          fontSize: 13
+        }}>
+          🔍 Debug: View Raw JSON Data
+        </summary>
+        <div style={{ marginTop: 12, display: "grid", gap: 12 }}>
+          <JSONPanel title="Speed JSON (raw)" data={speedRaw} />
+          <JSONPanel title="Incidents JSON (raw)" data={incRaw} />
+          <JSONPanel title="Insights JSON (raw)" data={insightsRaw} />
+        </div>
+      </details>
     </div>
   );
 }

@@ -1,62 +1,102 @@
 import React, { useMemo } from "react";
 
-/* ---------- small UI primitive ---------- */
-function Card({ title, children, footer }) {
+/* ---------- small UI primitives ---------- */
+function Card({ title, children, footer, accent = false }) {
   return (
-    <div style={{ background: "#fff", border: "1px solid #eee", borderRadius: 12, padding: 14 }}>
-      <div style={{ fontWeight: 600, marginBottom: 8 }}>{title}</div>
+    <div className={`card card--padded ${accent ? "card--accent" : ""}`}>
+      {title && <div className="card-title">{title}</div>}
       <div>{children}</div>
-      {footer && (
-        <div style={{ marginTop: 10, paddingTop: 10, borderTop: "1px solid #eee", fontSize: 12, color: "#666" }}>
-          {footer}
-        </div>
-      )}
+      {footer && <div className="card-footer">{footer}</div>}
     </div>
   );
 }
 
 const bandColor = {
-  1: "#d73027", 2: "#fc8d59", 3: "#fee08b", 4: "#d9ef8b", 5: "#91cf60", 6: "#1a9850",
+  1: "#d73027", 2: "#fc8d59", 3: "#fee08b",
+  4: "#d9ef8b", 5: "#91cf60", 6: "#1a9850",
 };
 const bandLabel = {
-  1: "gridlock", 2: "very slow", 3: "slow", 4: "moderate", 5: "fast", 6: "very fast",
+  1: "gridlock", 2: "very slow", 3: "slow",
+  4: "moderate", 5: "fast", 6: "very fast",
 };
 
-/* ---------- parsing ---------- */
+/* ---------- helpers ---------- */
+function tidyText(s) {
+  let t = String(s || "");
+  t = t.replace(/\r/g, "");
+  t = t.replace(/[ \t]+\n/g, "\n");   // trim trailing spaces
+  t = t.replace(/\n{3,}/g, "\n\n");   // collapse >2 newlines
+  t = t.replace(/\s+([.,;:!?])/g, "$1");      // no space before punctuation
+  t = t.replace(/([.,;:!?])(?=\S)/g, "$1 ");  // ensure space after punctuation
+  t = t.replace(/\(\s+/g, "(").replace(/\s+\)/g, ")"); // ( )
+  t = t.replace(/\s{2,}/g, " ");
+  return t.trim();
+}
+
+function extractBulletsFromProse(prose) {
+  // Remove any fenced code & any JSON-like tail that starts with generated keys
+  const cleaned = String(prose || "")
+    .replace(/```[\s\S]*?```/g, "")
+    .replace(/\{\s*"(generatedAt|topHotspots|advice)"[\s\S]*$/i, "");
+
+  const match = cleaned.match(/Actionable\s+Advice\.?\s*\n([\s\S]*)$/i);
+  const section = match ? match[1] : "";
+  const lines = section
+    .split("\n")
+    .map((s) => s.trim())
+    .filter((s) => /^[-•]\s+/.test(s))
+    .map((s) =>
+      s
+        .replace(/^[-•]\s+/, "")
+        .replace(/\{\s*"(generatedAt|topHotspots|advice)"[\s\S]*$/i, "")
+        .trim()
+    );
+
+  return lines.map((line) => {
+    // Try to infer a ROAD-looking phrase (ALL CAPS words)
+    const m =
+      line.match(/\b([A-Z][A-Z\s'./-]{3,})\b/) ||
+      line.match(/\b(on|along|near|via|towards)\s+([A-Z][A-Z\s'./-]{3,})\b/i);
+    const road = m ? (m[2] || m[1]).trim().replace(/\s{2,}/g, " ") : null;
+    return { road, action: line };
+  });
+}
+
+/* ---------- parsing (new shape + robust cleaning) ---------- */
 function parseInsights(raw) {
   const root = Array.isArray(raw) ? raw[0] : raw;
-  const out = (root?.output ?? "").toString();
 
-  // prose: remove any fenced code blocks
-  const prose = out.replace(/```[\s\S]*?```/g, "").trim();
+  // Prefer new shape: { prose, generatedAt, topHotspots, advice }
+  const proseRaw = String(root?.prose ?? root?.output ?? "");
 
-  // try fenced JSON first
-  const m = out.match(/```json\s*([\s\S]*?)```/i) || out.match(/```([\s\S]*?)```/i);
-  let obj = null;
-  if (m?.[1]) {
-    try { obj = JSON.parse(m[1]); } catch {}
-  }
-  // fallback: first {...} block
-  if (!obj) {
-    const a = out.indexOf("{"), b = out.lastIndexOf("}");
-    if (a >= 0 && b > a) {
-      try { obj = JSON.parse(out.slice(a, b + 1)); } catch {}
-    }
-  }
+  // Strip any embedded fenced JSON and any trailing JSON payload appended to prose
+  const proseSansJson = tidyText(
+    proseRaw
+      .replace(/```[\s\S]*?```/g, "")
+      .replace(/\{\s*"(generatedAt|topHotspots|advice)"[\s\S]*$/i, "")
+  );
 
-  const topHotspots = Array.isArray(obj?.topHotspots) ? obj.topHotspots : [];
-  const advice = Array.isArray(obj?.advice) ? obj.advice : [];
+  // Keep only the descriptive part; drop the "Actionable Advice" section from prose
+  const advHeaderIdx = proseSansJson.search(/Actionable\s+Advice\.?/i);
+  const summaryOnly =
+    advHeaderIdx >= 0 ? proseSansJson.slice(0, advHeaderIdx).trim() : proseSansJson;
+
+  // Prefer structured arrays from server; otherwise, pull bullets from prose
+  const topHotspots = Array.isArray(root?.topHotspots) ? root.topHotspots : [];
+  const adviceFromServer = Array.isArray(root?.advice) ? root.advice : [];
+  const advice =
+    adviceFromServer.length ? adviceFromServer : extractBulletsFromProse(proseRaw);
 
   return {
-    prose,
-    generatedAt: obj?.generatedAt || null,
+    prose: summaryOnly,
+    generatedAt: root?.generatedAt || null,
     topHotspots,
     advice,
-    rawJson: obj || null,
+    rawJson: root || null,
   };
 }
 
-/* ---------- subviews ---------- */
+/* ---------- sections ---------- */
 function Summary({ prose, generatedAt }) {
   const ts = useMemo(() => {
     if (!generatedAt) return null;
@@ -64,10 +104,8 @@ function Summary({ prose, generatedAt }) {
   }, [generatedAt]);
 
   return (
-    <Card title="AI Summary" footer={ts ? `Generated at ${ts}` : undefined}>
-      <div style={{ fontSize: 13, color: "#111", whiteSpace: "pre-wrap" }}>
-        {prose || "No summary available."}
-      </div>
+    <Card title="AI Summary" footer={ts ? `Generated at ${ts}` : undefined} accent>
+      <div className="summary">{prose || "No summary available."}</div>
     </Card>
   );
 }
@@ -77,7 +115,7 @@ function Hotspots({ rows }) {
 
   return (
     <Card title="Top Hotspots">
-      <div style={{ display: "grid", gap: 8 }}>
+      <div className="section">
         {rows.map((h, i) => {
           const b = Number(h.band) || 1;
           const clr = bandColor[b] || "#aaa";
@@ -86,19 +124,19 @@ function Hotspots({ rows }) {
           const max = Number.isFinite(h.avgMax) ? Math.round(h.avgMax) : null;
 
           return (
-            <div key={i} style={{
-              display: "grid", gridTemplateColumns: "1fr auto", gap: 8, alignItems: "center",
-              background: "#fafafa", border: "1px solid #eee", borderRadius: 8, padding: "8px 10px"
-            }}>
+            <div key={i} className="hotspot-row">
               <div>
-                <div style={{ fontSize: 13, fontWeight: 600 }}>{h.road || "Unnamed road"}</div>
-                <div style={{ fontSize: 12, color: "#555" }}>
+                <div className="hotspot-road">{h.road || "Unnamed road"}</div>
+                <div className="hotspot-meta">
                   Band {b} – {lbl}
                   {Number.isFinite(min) && Number.isFinite(max) && <> • Avg {min}–{max} km/h</>}
                   {" • "}Works={h.works ?? 0} • Incidents={h.incidents ?? 0}
                 </div>
               </div>
-              <div title={`Band ${b}: ${lbl}`} style={{ width: 28, height: 10, borderRadius: 4, background: clr, justifySelf: "end" }} />
+              <div className="chip" style={{ "--c": clr }}>
+                <span className="dot" style={{ background: clr }} />
+                Band {b}
+              </div>
             </div>
           );
         })}
@@ -107,29 +145,44 @@ function Hotspots({ rows }) {
   );
 }
 
+// Replace your existing Advice component with this one-column version
 function Advice({ items }) {
-  if (!items?.length) return <Card title="Actionable Advice">No advice available.</Card>;
+  const clean = (s) =>
+    String(s || "")
+      .replace(/\{\s*"(generatedAt|topHotspots|advice)"[\s\S]*$/i, "")
+      .trim();
+
+  const normalized = Array.isArray(items)
+    ? items.map((x) =>
+        typeof x === "string" ? { road: null, action: clean(x) } : { ...x, action: clean(x.action) }
+      )
+    : [];
+
+  if (!normalized.length) return <Card title="Actionable Advice">No advice available.</Card>;
+
   return (
     <Card title="Actionable Advice">
-      <ul style={{ margin: 0, paddingLeft: 18, fontSize: 13, color: "#111" }}>
-        {items.map((a, i) => (
-          <li key={i}><b>{a.road || "Unnamed road"}:</b> {a.action || "—"}</li>
+      <ul className="list-clean">
+        {normalized.map((a, i) => (
+          <li key={i}>
+            {a.road ? <span className="list-road">{a.road}: </span> : null}
+            {a.action || "—"}
+          </li>
         ))}
       </ul>
     </Card>
   );
 }
 
-/* ---------- main (hooks always run) ---------- */
+/* ---------- main ---------- */
 export default function TrafficInsights({ data, loading, error, onRefresh }) {
-  // Hooks are called unconditionally before any early returns
   const parsed = useMemo(() => parseInsights(data), [data]);
   const { prose, topHotspots, advice, generatedAt } = parsed;
 
   return (
-    <div style={{ display: "grid", gap: 12 }}>
+    <div className="section">
       <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-        <span style={{ fontSize: 12, color: "#666" }}>
+        <span className="muted">
           Insights: {loading ? "Loading…" : error ? "Error" : "Loaded"}
         </span>
         {onRefresh && <button onClick={onRefresh}>Refresh insights</button>}
